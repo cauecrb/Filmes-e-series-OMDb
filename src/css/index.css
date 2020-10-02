@@ -1,0 +1,171 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'montserrat', sans-serif;
+  background-color: #EEE9E9;
+
+}
+
+header{
+  padding: 50px 15px 0px;
+}
+
+header h1 {
+  color: #1C1C1C;
+  font-size: 40px;
+  font-weight: 450;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width:960px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+section{
+  padding: 15px;
+}
+
+.searchbox{
+  text-align: center;
+  width: 30%;
+  padding: 15px;
+  margin-left: 22px;
+
+/*   border: none;
+  outline: none;
+  background: none; */
+
+}
+
+/* .searchbox:focus{
+  box-shadow: 1px 1px 1px 1px #008B8B;
+} */
+
+.result{
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  margin:10px 10px #1C1C1C;
+  border-color: 10px #1C1C1C;
+}
+
+.results .result{
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  margin: 10px auto;
+  border-color: 10px 10px #1C1C1C;
+
+  
+}
+
+.results .result h3{
+  color: #1C1C1C;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+.results .result h4{
+  color: #1C1C1C;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: normal;
+  
+}
+
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300vh;
+  background-color: #EEE9E9;
+
+  overflow-y: scroll;
+}
+
+.popup.content{
+  display: block;
+  width:100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #FFF;
+}
+
+.popup.content h2{
+  font-size: 28px;
+  font-weight: 600;
+
+}
+
+.popup.content h2 span{
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.popup .content .rating{
+  margin-bottom: 30px;
+}
+
+.popup.content .plot{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0px -13px 30px;
+}
+
+.popup.content .plot img{
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding:0px 15px;
+}
+
+.popup.content .plot p{
+  flex:1 1 50%;
+  padding: 15px;
+}
+
+.popup.content .close{
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+
+  background-color: #008B8B;
+  color: #FFF;
+  border-radius: 8px;
+  border:none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  transition: 0.4s ease-out;
+}
+
+.popup.content.close:hover{
+  background: #191970;
+}

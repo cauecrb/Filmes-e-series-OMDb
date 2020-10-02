@@ -1,0 +1,21 @@
+.buttons{
+    display: inline-flex;
+    padding: 15px;
+}
+
+.buttons .buttserie{
+    height: 50px;
+    width: 150px;
+    background-color: #00BFFF;
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+.buttons .buttfilm{
+    height: 50px;
+    width: 150px;
+    background-color: #00BFFF;
+    color: aliceblue;
+    margin-left: 10px;
+}
+
